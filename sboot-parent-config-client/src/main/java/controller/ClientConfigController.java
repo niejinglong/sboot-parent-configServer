@@ -5,12 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class ConfigController {
+public class ClientConfigController {
+
     @Value("${profile}")
-    private String proflie;
+    private String profile;
 
     @GetMapping("/getpf")
-    public String getProfie(){
-        return proflie;
+    public String getProfile(){
+        return profile;
     }
 }
