@@ -5,6 +5,10 @@ server:
   servlet:
     context-path: /cs
 spring:
+  security:
+    user:
+      name: admin
+      password: admin
   application:
     #应用名
     name: configServer
@@ -15,4 +19,14 @@ spring:
         git:
           uri: https://github.com/niejinglong/sboot-parent-configServer # 公共仓库
           search-paths: eureka # 文件路经
-          clone-on-start: true # 启动时加载仓库配置文件（全局）
+          #clone-on-start: true # 启动时加载仓库配置文件（全局）
+#RSA秘钥加密
+#encrypt:
+    #keyStore:
+    #location: classpath:/server.jks
+    #password: letmein
+    #alias: mytestkey
+    #secret: changeme
+logging:
+  level:
+    root: info

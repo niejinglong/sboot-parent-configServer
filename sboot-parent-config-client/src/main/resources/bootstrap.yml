@@ -5,5 +5,7 @@ spring:
       uri: http://localhost:8080/cs/
       profile: dev
       label: master
+      username: admin
+      password: admin
   application:
-    name: ser
+    name: eureka
